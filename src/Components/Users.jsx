@@ -6,7 +6,7 @@ const Users = () => {
   const [users, setUsers] = useState(loadedUsers);
   const handleDelete = (id) => {
     console.log(id)
-    fetch(`http://localhost:5000/user/${id}`,{
+    fetch(`https://coffee-store-server-theta-two.vercel.app/user/${id}`,{
         method: 'DELETE'
     })
     .then(res => res.json())
